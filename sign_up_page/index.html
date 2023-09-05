@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d21d099cad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form action="">
+        <h1>Sign Up</h1>
+
+        <div class="container">
+            <label for="name"><i class="fa-solid fa-user" style="color: #9633ff;font-size:'20px';"></i></label>
+            <input type="text" name="fullName" id="name" placeholder="Name">
+            <span class="error"><i class="fa-solid fa-circle-exclamation" style="color: #008000;"></i> Must Contains Numbers, Letters and UnderScore</span>
+        </div>
+
+        <div class="container">
+            <label for="mail"><i class="fa-solid fa-envelope" style="color: #9633ff;font-size:'20px';"></i></label>
+            <input type="email" name="mail" id="mail" placeholder="E-mail"><span class="error"><i class="fa-solid fa-circle-exclamation" style="color: #008000;"></i>     Must be @outlook.com or @gmail.com</span>
+        </div>
+
+        <div class="container">
+            <label for="pass"><i class="fa-solid fa-lock" style="color: #9633ff;font-size:'20px';"></i></label>
+            <input type="password" name="password" id="pass" placeholder="Password">
+            <span class="error"><i class="fa-solid fa-circle-exclamation" style="color: #008000;"></i> Max 10 Chars Only</span>
+        </div>
+
+        <div class="license">
+            <input type="checkbox" name="agree" id="license">
+            <label for="license">I read and agree to Terms & Conditions</label>
+        </div>
+
+        <input type="submit" id="submit" value="Create Account">
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>

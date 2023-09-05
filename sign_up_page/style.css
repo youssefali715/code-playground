@@ -1,0 +1,64 @@
+*{
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+  background-color: #9633ff;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+form{
+  background-color: #fff;
+  color: #6a6f8d;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+}
+.container{
+  position: relative;
+  padding:10px 0;
+}
+.container > label{
+  position: absolute;
+  top: 25px;
+    left: 60px;
+}
+.container > span{
+  position: absolute;
+    width: 100%;
+    bottom: 0px;
+    right: -50px;
+    font-size: 10px;
+    text-align: left;
+}
+form > label{
+  text-align: left;
+  z-index: 0;
+}
+#name, #mail, #pass{
+  margin: 10px 0;
+  height: 30px;
+  padding-left: 50px;
+  border-radius: 20px;
+  border: .5px solid transparent;
+  box-shadow: 0 0 10px 1px #878787;
+}
+
+#submit {
+  background-color: #9633ff;
+  color: white;
+  border: 0;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 6px #7c00ff inset;
+}
+
+.license{
+  margin: 10px 0;
+}
