@@ -1,15 +1,29 @@
 * {
   font-family: 'Lato', sans-serif;
 }
+h2{
+  font-size: 15px;
+  text-align: center;
+}
 body{
   background-color: #2ad576;
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   margin: 0;
 }
+.container {
+  width: 300px;
+}
 .container > .triangle > form{
   position: relative;
+  height: 100px;
+  margin-left: 30px;
+}
+.container > .triangle{
+  display: flex;
+  flex-direction: column;
 }
 
 .container > .triangle > form > input:first-of-type{
