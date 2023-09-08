@@ -1,0 +1,35 @@
+* {
+  font-family: 'Lato', sans-serif;
+}
+body{
+  background-color: #2ad576;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.container > .triangle > form{
+  position: relative;
+}
+
+.container > .triangle > form > input:first-of-type{
+  rotate: -35deg;
+  position: absolute;
+  width: 5cm;
+  border-bottom: 3px solid black;
+}
+.container > .triangle > form > input:nth-child(2){
+  rotate: 90deg;
+  left: 135px;
+  top: 15px;
+  position: absolute;
+  width: 3cm;
+  border-bottom: 3px solid black;
+}
+.container > .triangle > form > input:nth-child(3){
+  position: absolute;
+  top: 75px;
+  left: 24px;
+  width: 4.1cm;
+  border-top: 3px solid black;
+}
