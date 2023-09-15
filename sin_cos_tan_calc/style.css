@@ -6,7 +6,8 @@ h2{
   text-align: center;
 }
 body{
-  background-color: #2ad576;
+background: rgb(63, 94, 251);
+  background: linear-gradient(133deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,4 +47,8 @@ body{
   left: 24px;
   width: 4.1cm;
   border-top: 3px solid black;
+}
+.results > p{
+  text-align: center;
+    text-transform: full-width;
 }
