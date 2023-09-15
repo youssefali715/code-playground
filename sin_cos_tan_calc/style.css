@@ -33,6 +33,15 @@ background: rgb(63, 94, 251);
   width: 5cm;
   border-bottom: 3px solid black;
 }
+button{
+      width: 100px;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px auto;
+        background: linear-gradient(319deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+        color: white;
+        border: 5px dotted white;
+}
 .container > .triangle > form > input:nth-child(2){
   rotate: 90deg;
   left: 135px;
