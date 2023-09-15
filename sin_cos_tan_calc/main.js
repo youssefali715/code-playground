@@ -13,11 +13,35 @@ function decToFrac(dec) {
     )
   ).sort((a, b) => a[3] - b[3])[0].slice(0, 2)
 };
-
 submitButton.onclick = function () {
-  const ac = document.forms[0][0].value;
-  const ab = document.forms[0][1].value;
-  const bc = document.forms[0][2].value;
+  let ac = document.forms[0][0].value;
+  let ab = document.forms[0][1].value;
+  let bc = document.forms[0][2].value;
+  function checkSides (){
+    let missedSide = [];
+    if (ac == '')
+      missedSide.push('ac')
+    if (ab == '')
+      missedSide.push('ab')
+    if (bc == '')
+      missedSide.push('bc')
+    if (missedSide.length > 1){
+      window.alert("You Must Add at least two sides")
+      preventDefault()
+    }else{
+      if (missedSide[0] == 'ac'){
+        let acPowered = (ab ** 2) + (bc ** 2);
+        ac = Math.sqrt(acPowered);
+      } else if (missedSide[0] == 'bc'){
+        let bcPowered = ac ** 2 - ab ** 2;
+        bc = Math.sqrt(bcPowered);
+      } else if (missedSide[0] == 'ab'){
+        let abPowered = ac ** 2 - bc ** 2;
+        ab = Math.sqrt(abPowered);
+      }
+    }
+  }
+  checkSides()
   let selectAngle = document.querySelector('select#angle').value;
   if (selectAngle == 'a') {
     sin_angle_val = decToFrac(bc / ac).join("/")

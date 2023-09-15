@@ -6,7 +6,7 @@ h2{
   text-align: center;
 }
 body{
-background: rgb(63, 94, 251);
+  background: rgb(63, 94, 251);
   background: linear-gradient(133deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
   display: flex;
   justify-content: center;
@@ -34,19 +34,19 @@ background: rgb(63, 94, 251);
   border-bottom: 3px solid black;
 }
 button{
-      width: 100px;
-        border-radius: 20px;
-        padding: 10px;
-        margin: 20px auto;
-        background: linear-gradient(319deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
-        color: white;
-        border: 5px dotted white;
+  width: 100px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px auto;
+  background: linear-gradient(319deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  color: white;
+  border: 5px dotted white;
 }
 select{
   background-color: white;
-    border: 0;
-    border-radius: 20px;
-    padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px;
 }
 .container > .triangle > form > input:nth-child(2){
   rotate: 90deg;
@@ -66,5 +66,5 @@ select{
 .results > p{
   text-align: center;
   letter-spacing: 13.5px;
-    font-weight: bold;
+  font-weight: bold;
 }
