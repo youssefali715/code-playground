@@ -50,5 +50,6 @@ background: rgb(63, 94, 251);
 }
 .results > p{
   text-align: center;
-    text-transform: full-width;
+  letter-spacing: 13.5px;
+    font-weight: bold;
 }
